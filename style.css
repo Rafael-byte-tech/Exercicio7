@@ -1,0 +1,66 @@
+header
+{
+    text-align: center;
+}
+
+.container
+{
+    position: relative;
+    display: inline-block;
+    z-index: 1; /* The z-index CSS controla a ordem em que um elemento com posição relativa estará no "eixo z". Fazendo com que um elemento possa estar acima, abaixo ou no mesmo nível que outro. */
+
+    width: 100%;
+    height: 400px;
+}
+
+.container img
+{
+    /* Para centralizar a imagem, defini-se as margens esquerda e direita para 'auto', e a propriedade display é definida para 'block' */
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+
+    width: 80%;
+    height: 100%;
+
+    opacity: 0.5;
+    border: 2px solid green;
+}
+
+.centro
+{
+    position: absolute;
+    z-index: 999;
+
+    top: 50%;
+    width: 100%;
+
+    text-align: center;
+    color: #000000;
+}
+
+.text-box
+{
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+
+    padding-left: 50px;
+    padding-right: 50px;
+
+    text-align: justify;
+}
+
+.text-box a
+{
+    display: block;
+}
+
+.text-box img
+{
+    position: fixed;
+    top: 82%;
+    left: 92%;
+
+    width: 100px;
+}
